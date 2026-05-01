@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Priyanka's Team Task Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Team Task Manager</h1>
+
+    <h2>Create Project</h2>
+    <input type="text" id="projectName" placeholder="Enter project name" />
+    <button onclick="createProject()">Add Project</button>
+
+    <ul id="projectList"></ul>
+
+    <select id="projectSelect">
+      <option value="">Select Project</option>
+    </select>
+
+    <h2>Add Task</h2>
+    <input type="text" id="taskBox" placeholder="Enter task" />
+    <input type="date" id="dueDate" />
+
+    <select id="status">
+      <option value="To Do">To Do</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Done">Done</option>
+    </select>
+
+    <button onclick="createTask()">Add Task</button>
+
+    <h2>Tasks</h2>
+    <ul id="taskList"></ul>
+
+    <h3 id="dashboard"></h3>
+
+    <script src="script.js"></script>
+  </body>
+</html>
